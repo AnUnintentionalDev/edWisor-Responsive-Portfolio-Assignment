@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'DylanGothic-Regular';
+  src: url('../fonts/DylanGothic-Regular.eot');
+  src: url('../fonts/DylanGothic-Regular.woff2') format('woff2'),
+       url('../fonts/DylanGothic-Regular.woff') format('woff'),
+       url('../fonts/DylanGothic-Regular.ttf') format('truetype'),
+       url('../fonts/DylanGothic-Regular.svg#DylanGothic-Regular') format('svg'),
+       url('../fonts/DylanGothic-Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+

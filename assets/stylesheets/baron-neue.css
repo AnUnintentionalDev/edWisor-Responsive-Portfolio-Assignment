@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'BaronNeue';
+  src: url('BaronNeue.eot');
+  src: url('../fonts/BaronNeue.woff2') format('woff2'),
+       url('../fonts/BaronNeue.woff') format('woff'),
+       url('../fonts/BaronNeue.ttf') format('truetype'),
+       url('../fonts/BaronNeue.svg#BaronNeue') format('svg'),
+       url('../fonts/BaronNeue.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+

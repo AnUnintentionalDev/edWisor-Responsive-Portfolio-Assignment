@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'Sparkling';
+  src: url('../fonts/FontdinerdotcomSparkly.eot');
+  src: url('../fonts/FontdinerdotcomSparkly.woff2') format('woff2'),
+       url('../fonts/FontdinerdotcomSparkly.woff') format('woff'),
+       url('../fonts/FontdinerdotcomSparkly.ttf') format('truetype'),
+       url('../fonts/FontdinerdotcomSparkly.svg#FontdinerdotcomSparkly') format('svg'),
+       url('../fonts/FontdinerdotcomSparkly.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
