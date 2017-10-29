@@ -10007,13 +10007,16 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   font-size: 175%; }
 
+.section .our-text .id-heading {
+  padding: 3em 0 0; }
+
 .home {
   width: 100%;
   height: 100%;
   background: #fff url("../images/black-brick-wall.jpg") no-repeat center center;
   background-size: cover; }
 
-.home h1, .home h2 {
+.home h1, .home h2, .contact h2, .contact .uk-h3 {
   color: #fff;
   text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5); }
 
@@ -10084,8 +10087,56 @@ h1, h2, h3, h4, h5, h6 {
   filter: brightness(100%);
   transform: translateY(10px) scale(0.8); }
 
+.contact {
+  width: 100%;
+  position: relative;
+  background: #000;
+  color: #fff; }
+
+.contact .media-source {
+  width: 7em;
+  height: 7em;
+  text-align: center;
+  border-radius: 50%; }
+
+.contact .uk-navbar-container.social-media-icons {
+  background: transparent;
+  padding: 1em 0; }
+
+.contact .social-media-icons .uk-navbar-nav > li > a {
+  width: 6em;
+  height: 6em;
+  margin-right: 1em;
+  color: #fff;
+  background: #222;
+  padding: 1em;
+  border-radius: 50%;
+  -webkit-filter: brightness(70%);
+  filter: brightness(70%);
+  text-align: center;
+  transition: all ease-in 0.2s; }
+
+.contact .social-media-icons .uk-navbar-nav > li > a i {
+  font-size: 3em;
+  vertical-align: middle; }
+
+.contact .social-media-icons .uk-navbar-nav > li > a:hover {
+  -webkit-filter: brightness(100%);
+  filter: brightness(100%);
+  transform: scale(1.2);
+  background: #333; }
+
 @media screen and (max-width: 480px) {
   .home .me {
     width: 50%; } }
+@media screen and (max-width: 568px) {
+  .contact .social-media-icons .uk-navbar-nav > li > a {
+    width: 3em;
+    height: 3em;
+    margin-right: 0.25em; }
+
+  .contact .social-media-icons .uk-navbar-nav > li > a i {
+    font-size: 1.5em;
+    vertical-align: middle; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -49,7 +49,7 @@
           </div>
         </div>
         <div class="uk-visible@m">
-          <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #work">
+          <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #contact">
               <nav class="uk-navbar-container">
                   <div class="uk-container">
                       <div uk-navbar="dropbar: true; dropbar-anchor: !.uk-navbar-container; dropbarMode: push">
@@ -74,10 +74,10 @@
       <!-- MAIN-->
       <main>
         <!-- HOME-SECTION-->
-        <section class="uk-section uk-section-default home">
+        <section class="section home">
             <div class="profile-pic uk-text-center">
-                <div class="our-text" style="padding: 3em;">
-                  <h1 uk-scrollspy="cls: uk-animation-scale-up; repeat: true" id="home">Hey World <i class="fa fa-smile-o"></i> myself Rohit Kandpal</h1>
+                <div class="our-text">
+                  <h1 uk-scrollspy="cls: uk-animation-scale-up; repeat: true" class="id-heading" id="home">Hey World <i class="fa fa-smile-o"></i> myself Rohit Kandpal</h1>
                 </div>
                 <img src="assets/images/me.jpg" alt="Rohit Kandpal" class="uk-border-circle me" uk-scrollspy="cls: uk-animation-scale-up; repeat: true; delay : 1">
                 <h2 uk-scrollspy="cls: uk-animation-slide-bottom; repeat: true; delay: 2">I'm a motivational <strong>Front End Developer</strong></h2>
@@ -85,9 +85,11 @@
         </section>
         <!-- END-OF-HOME-SECTION-->
         <!-- ABOUT-SECTION-->
-        <section class="uk-section uk-section-default about">
+        <section class="section about">
             <div class="about-wrapper">
-                <h2 class="uk-text-center uk-heading-primary uk-margin-large-bottom"id="about">About Me</h2>
+                <div class="our-text">
+                  <h2 class="uk-text-center uk-heading-primary uk-margin-large-bottom id-heading" id="about">About Me</h2>
+                </div>
                 <div class="uk-container">
                   <ul uk-tab="animation: uk-animation-fade;" class="uk-flex-center uk-tab uk-flex-around@l">
                     <li class="uk-active"><a href="#">Bio</a></li>
@@ -301,9 +303,11 @@
         </section>
         <!-- END-OF-ABOUT-SECTION-->
         <!-- PROJECTS-SECTION-->
-        <section class="uk-section uk-section-default" id="skills">
+        <section class="section skills" >
             <div class="skills-wrapper">
-                <h2 class="uk-text-center uk-heading-primary uk-margin-large-bottom">Skills</h2>
+              <div class="our-text">
+                  <h2 class="uk-text-center uk-heading-primary uk-margin-large-bottom id-heading" id="skills">Skills</h2>
+                </div>
                 <div class="uk-container">
                   <dl class="uk-description-list uk-description-list-divider">
                     <dt>
@@ -725,12 +729,14 @@
         <!-- END-OF-PROJECTS-SECTION-->
 
         <!-- PROJECTS-SECTION-->
-        <section class="uk-section uk-section-default" id="work">
+        <section class="section work">
             <div class="work-wrapper">
-              <h2 class="uk-text-center uk-heading-primary uk-margin-large-bottom">Work</h2>
+              <div class="our-text">
+                <h2 class="uk-text-center uk-heading-primary uk-margin-large-bottom id-heading" id="work">Work</h2>
+              </div>
               <div class="uk-container">
                 <p class="uk-h4">Logo / Branding</p>
-                <div class="uk-child-width-1-4@m uk-flex-middle uk-flex-center" uk-grid uk-lightbox="animation: slide">
+                <div class="uk-child-width-1-4@s uk-flex-middle uk-flex-center" uk-grid uk-lightbox="animation: slide">
                   <div>
                     <div class="logo-project">
                         <a class="uk-inline" href="assets/images/projects/logo-branding/caoi-logo-png.png" caption="Cruise Association Of India logo">
@@ -767,7 +773,7 @@
                 that's why showing you my top 4 designs and development. <br> <span class="uk-text-warning uk-text-small">NOTE:
                 All websites are not working super efficiently some designs are fresh and creatd very soon,
                 still needs optimization and bug fixing.</span></p>
-                <div class="uk-child-width-1-4@m uk-flex-middle uk-flex-center" uk-grid uk-lightbox="animation: slide">
+                <div class="uk-child-width-1-2@m uk-flex-middle uk-flex-center" uk-grid uk-lightbox="animation: slide">
                   <div>
                     <div class="ui-project">
                         <a class="uk-inline" href="assets/images/projects/web-design/Cruise-Association-of-India-Homepage.png" caption="Cruise Association Of India | Beta Homepage">
@@ -803,6 +809,36 @@
           </div>
         </section>
         <!-- END-OF-PROJECTS-SECTION-->
+
+        <!-- CONTACT-SECTION-->
+        <section class="section contact">
+            <div class="contact-wrapper">
+              <div class="our-text">
+                <h2 class="uk-text-center uk-heading-primary uk-margin-large-bottom id-heading" id="contact">Contact Me</h2>
+              </div>
+              <div class="uk-container">
+                <div class="google-form uk-responsive-width uk-margin-bottom">
+                  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdeZiKBdW7Zmk3BX3_mGfyx4k35yw21cO3z7vp3CoqC7ne40w/viewform?embedded=true" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+                </div>
+
+                <p class="uk-text-center uk-h3">Follow me on Social Media</p>
+                <nav class="uk-navbar-container uk-margin social-media-icons" uk-navbar>
+                  <div class="uk-navbar-center">
+                      <ul class="uk-navbar-nav">
+                        <li class="github uk-margin-small-right"><a href="#"><i class="fa fa-github fa-2x"></i></a></li>
+                        <li class="freeCodeCamp uk-margin-small-right"><a href="#"><i class="fa fa-free-code-camp fa-2x"></i></a></li>
+                        <li class="facebook uk-margin-small-right"><a href="#"><i class="fa fa-facebook-official fa-2x"></i></a></li>
+                        <li class="twitter uk-margin-small-right"><a href="#"><i class="fa fa-twitter fa-2x"></i></a></li>
+                        <li class="google-plus"><a href="#"><i class="fa fa-google-plus fa-2x"></i></a></li>
+                      </ul>
+                  </div>
+                </nav>
+
+              </div>
+
+            </div>
+          </section>
+          <!-- END-OF-CONTACT-SECTION-->
         <a href="#" uk-totop uk-scroll></a>
       </main>
       <!-- END-OF-MAIN-->
