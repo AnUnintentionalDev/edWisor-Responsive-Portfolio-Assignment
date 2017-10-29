@@ -37,9 +37,7 @@ h1,h2,h3,h4,h5,h6{ font-family: 'Watermelon Script Demo'; font-weight: 500; line
 .uk-offcanvas .uk-nav-default .uk-nav-header{
   a:hover, a:focus{
     color: #fff;
-    transform: scale(1.6);
-    -webkit-transform: scale(1.6);
-    -moz-transform: scale(1.6);
+    font-size: 160%;
   }
 
 }
