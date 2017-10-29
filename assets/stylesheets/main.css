@@ -9996,14 +9996,17 @@ h1, h2, h3, h4, h5, h6 {
 #header .uk-navbar-container {
   background: #000; }
 
-#header .uk-offcanvas-bar .uk-nav-default > li.uk-active > a, #header .uk-navbar-nav > li.uk-active > a {
-  font-size: 175%;
-  color: #fff; }
+#header .uk-navbar-nav > li > a, .uk-offcanvas .uk-nav-default .uk-nav-header a {
+  transition: all ease-in 0.3s;
+  -webkit-transition: all ease-in 0.3s;
+  -moz-transition: all ease-in 0.3s;
+  -ms-transition: all ease-in 0.3s; }
 
-#header .uk-offcanvas-bar .uk-nav-default > li.uk-active > a:hover {
-  color: #fff; }
+.uk-offcanvas .uk-nav-default .uk-nav-header a:hover, .uk-offcanvas .uk-nav-default .uk-nav-header a:focus {
+  color: #fff;
+  font-size: 150%; }
 
-#header .uk-navbar-nav > li:hover > a, #header .uk-navbar-nav > li > a:focus, #header .uk-navbar-nav > li > a.uk-open {
+#header .uk-navbar-nav > li > a:hover, #header .uk-navbar-nav > li > a:focus, #header .uk-navbar-nav > li > a.uk-open {
   color: #fff;
   font-size: 175%; }
 
@@ -10053,6 +10056,9 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   position: relative; }
 
+.skills .skills-wrapper {
+  padding: 0.5em 10%; }
+
 .skills .skills-wrapper .uk-description-list dd {
   margin-top: 1em; }
 
@@ -10090,14 +10096,8 @@ h1, h2, h3, h4, h5, h6 {
 .contact {
   width: 100%;
   position: relative;
-  background: #000;
+  background: #1a1a1a;
   color: #fff; }
-
-.contact .media-source {
-  width: 7em;
-  height: 7em;
-  text-align: center;
-  border-radius: 50%; }
 
 .contact .uk-navbar-container.social-media-icons {
   background: transparent;
@@ -10126,10 +10126,32 @@ h1, h2, h3, h4, h5, h6 {
   transform: scale(1.2);
   background: #333; }
 
-@media screen and (max-width: 480px) {
-  .home .me {
-    width: 50%; } }
+.back-top {
+  width: 2em;
+  height: 2em;
+  padding: 0.5em;
+  text-align: center;
+  color: #fff;
+  background: #000;
+  display: none;
+  right: 1.5em;
+  bottom: 1.5em;
+  border-radius: 50%;
+  position: fixed;
+  transition: all ease-in 0.3s;
+  -webkit-transition: all ease-in 0.3s; }
+
+.back-top svg {
+  margin-top: 10px; }
+
+.back-top:hover {
+  background: #222;
+  color: #ccc; }
+
 @media screen and (max-width: 568px) {
+  .about .about-wrapper .about-features, .skills .skills-wrapper {
+    padding: 0.5em 5%; }
+
   .contact .social-media-icons .uk-navbar-nav > li > a {
     width: 3em;
     height: 3em;
@@ -10137,6 +10159,18 @@ h1, h2, h3, h4, h5, h6 {
 
   .contact .social-media-icons .uk-navbar-nav > li > a i {
     font-size: 1.5em;
+    vertical-align: middle; } }
+@media screen and (max-width: 480px) {
+  .home .me {
+    width: 50%; }
+
+  .contact .social-media-icons .uk-navbar-nav > li > a {
+    width: 2em;
+    height: 2em;
+    margin-right: 0.25em; }
+
+  .contact .social-media-icons .uk-navbar-nav > li > a i {
+    font-size: 1em;
     vertical-align: middle; } }
 
 /*# sourceMappingURL=main.css.map */

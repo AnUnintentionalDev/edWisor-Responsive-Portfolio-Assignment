@@ -18,13 +18,13 @@ $lightbox-toolbar-color:rgba(0,0,0,0.8);
 
 h1,h2,h3,h4,h5,h6{ font-family: 'Watermelon Script Demo'; font-weight: 500; line-height: 1.4; color: #171717; letter-spacing: 1px;}
 
-
-// HEADEr-&-NAVIGATION
+// HEADER-&-NAVIGATION
 #header .uk-sticky-fixed{ width: 100%;}
 #header .uk-navbar-container{ background: #000;}
-#header .uk-offcanvas-bar .uk-nav-default > li.uk-active > a, #header .uk-navbar-nav > li.uk-active > a{ font-size: 175%; color: #fff;}
-#header .uk-offcanvas-bar .uk-nav-default > li.uk-active > a:hover{ color: #fff;}
-#header .uk-navbar-nav > li:hover > a, #header .uk-navbar-nav > li > a:focus, #header .uk-navbar-nav > li > a.uk-open{ color: #fff; font-size: 175%;}
+#header .uk-navbar-nav > li > a, .uk-offcanvas .uk-nav-default .uk-nav-header a{ transition: all ease-in 0.3s; -webkit-transition: all ease-in 0.3s; -moz-transition: all ease-in 0.3s; -ms-transition: all ease-in 0.3s;}
+.uk-offcanvas .uk-nav-default .uk-nav-header a:hover, .uk-offcanvas .uk-nav-default .uk-nav-header a:focus{ color: #fff; font-size: 150%;}
+#header .uk-navbar-nav > li > a:hover, #header .uk-navbar-nav > li > a:focus, #header .uk-navbar-nav > li > a.uk-open{ color: #fff; font-size: 175%;}
+
 // CUSTOM-THEME
 $whiteHeading : #fff;
 @mixin text-shadow($one, $two, $three){
@@ -50,6 +50,7 @@ $whiteHeading : #fff;
 // SKILLS
 
 .skills{ width: 100%; position: relative;}
+.skills .skills-wrapper{ padding: 0.5em 10%;}
 .skills .skills-wrapper .uk-description-list dd{ margin-top: 1em;}
 .skills .learning-skills h3{ color: $whiteHeading; @include text-shadow(0px, 2px, 3px rgba(0,0,0,0.5));}
 .skills .learning-skills{ background: #1f1f1f; padding: 2em;}
@@ -64,23 +65,26 @@ $whiteHeading : #fff;
 
 // CONTACT
 
-.contact{ width: 100%; position: relative; background: #000; color: #fff;}
-.contact .media-source{ width: 7em; height: 7em; text-align: center; border-radius: 50%;}
+.contact{ width: 100%; position: relative; background: #1a1a1a; color: #fff;}
 .contact .uk-navbar-container.social-media-icons{ background: transparent; padding: 1em 0;}
 .contact .social-media-icons .uk-navbar-nav > li > a { width: 6em; height: 6em; margin-right: 1em; color: #fff; background: #222; padding: 1em; border-radius: 50%; -webkit-filter: brightness(70%); filter: brightness(70%); text-align: center; transition: all ease-in 0.2s;}
 .contact .social-media-icons .uk-navbar-nav > li > a i{ font-size: 3em; vertical-align: middle;}
 .contact .social-media-icons .uk-navbar-nav > li > a:hover{ -webkit-filter: brightness(100%); filter: brightness(100%); transform: scale(1.2); background: #333;}
 
+.back-top { width: 2em; height: 2em; padding: 0.5em; text-align: center; color: #fff; background: #000; display: none; right: 1.5em; bottom: 1.5em; border-radius: 50%; position: fixed; transition: all ease-in 0.3s; -webkit-transition: all ease-in 0.3s;}
+.back-top svg{ margin-top: 10px;}
+.back-top:hover{ background: #222; color: #ccc;}
 
 // MEDIA-QUERIES
-@media screen and (max-width: 480px){
-  .home .me{ width: 240px / 480px * 100%;}
-}
 
 @media screen and (max-width: 568px){
+  .about .about-wrapper .about-features, .skills .skills-wrapper{ padding: 0.5em 5%;}
   .contact .social-media-icons .uk-navbar-nav > li > a { width: 3em; height: 3em; margin-right: 0.25em;}
   .contact .social-media-icons .uk-navbar-nav > li > a i{ font-size: 1.5em; vertical-align: middle;}
 }
-@media screen and (min-width: 960px){
 
+@media screen and (max-width: 480px){
+  .home .me{ width: 240px / 480px * 100%;}
+  .contact .social-media-icons .uk-navbar-nav > li > a { width: 2em; height: 2em; margin-right: 0.25em;}
+  .contact .social-media-icons .uk-navbar-nav > li > a i{ font-size: 1em; vertical-align: middle;}
 }
