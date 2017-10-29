@@ -1,4 +1,14 @@
 @charset "UTF-8";
+body::-webkit-scrollbar {
+  width: 1em; }
+
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); }
+
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey; }
+
 /* ========================================================================
    Component: Base
  ========================================================================== */
@@ -10004,14 +10014,22 @@ h1, h2, h3, h4, h5, h6 {
 
 .uk-offcanvas .uk-nav-default .uk-nav-header a:hover, .uk-offcanvas .uk-nav-default .uk-nav-header a:focus {
   color: #fff;
-  font-size: 150%; }
+  transform: scale(1.6);
+  -webkit-transform: scale(1.6);
+  -moz-transform: scale(1.6); }
 
-#header .uk-navbar-nav > li > a:hover, #header .uk-navbar-nav > li > a:focus, #header .uk-navbar-nav > li > a.uk-open {
+#header .uk-navbar-nav li a:hover, #header .uk-navbar-nav li a:focus, #header .uk-navbar-nav li a.uk-open {
   color: #fff;
-  font-size: 175%; }
+  transform: scale(1.6);
+  -webkit-transform: scale(1.6);
+  -moz-transform: scale(1.6); }
 
 .section .our-text .id-heading {
   padding: 3em 0 0; }
+
+.section .uk-description-list > dt {
+  font-size: 1.25em;
+  color: #666; }
 
 .home {
   width: 100%;
@@ -10047,10 +10065,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .about .about-wrapper .uk-tab > .uk-active > a {
   border-color: #171717; }
-
-.about .about-wrapper .uk-description-list > dt {
-  font-size: 1.25em;
-  color: #666; }
 
 .skills {
   width: 100%;
