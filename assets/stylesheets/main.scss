@@ -10,6 +10,7 @@ body::-webkit-scrollbar-thumb {
   background-color: darkgrey;
   outline: 1px solid slategrey;
 }
+
 // 1. Your custom variables and variable overwrites.
 $global-link-color: #000;
 $global-color: #000;
@@ -51,6 +52,8 @@ h1,h2,h3,h4,h5,h6{ font-family: 'Watermelon Script Demo'; font-weight: 500; line
       }
   }
 }
+.uk-offcanvas .uk-nav.uk-nav-default{ margin-top: 1.5em;}
+
 // CUSTOM-THEME
 $whiteHeading : #fff;
 @mixin text-shadow($one, $two, $three){
