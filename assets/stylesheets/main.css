@@ -10006,9 +10006,6 @@ h1, h2, h3, h4, h5, h6 {
 #header .uk-navbar-container {
   background: #000; }
 
-.uk-offcanvas .uk-nav.uk-nav-default {
-  margin-top: 1.5em; }
-
 #header .uk-navbar-nav > li > a, .uk-offcanvas .uk-nav-default .uk-nav-header a {
   transition: all ease-in 0.3s;
   -webkit-transition: all ease-in 0.3s;
@@ -10024,6 +10021,9 @@ h1, h2, h3, h4, h5, h6 {
   transform: scale(1.6);
   -webkit-transform: scale(1.6);
   -moz-transform: scale(1.6); }
+
+.uk-offcanvas .uk-nav.uk-nav-default {
+  margin-top: 1.5em; }
 
 .section .our-text .id-heading {
   padding: 3em 0 0; }
@@ -10050,96 +10050,105 @@ h1, h2, h3, h4, h5, h6 {
 .about {
   width: 100%;
   position: relative; }
-
-.about .about-wrapper {
-  padding: 0.5em;
-  background: #fff; }
-
-.about .about-wrapper .about-features {
-  background: #fff;
-  padding: 1em 10%; }
-
-.about .about-wrapper .about-features h3 {
-  font-size: 2em;
-  color: #222;
-  font-weight: 500; }
-
-.about .about-wrapper .uk-tab > .uk-active > a {
-  border-color: #171717; }
+  .about .about-wrapper {
+    padding: 0.5em;
+    background: #fff; }
+    .about .about-wrapper .about-features {
+      background: #fff;
+      padding: 1em 10%; }
+      .about .about-wrapper .about-features h3 {
+        font-size: 2em;
+        color: #222;
+        font-weight: 500; }
+    .about .about-wrapper .uk-tab > .uk-active > a {
+      border-color: #171717; }
 
 .skills {
   width: 100%;
   position: relative; }
-
-.skills .skills-wrapper {
-  padding: 0.5em 10%; }
-
-.skills .skills-wrapper .uk-description-list dd {
-  margin-top: 1em; }
-
-.skills .learning-skills h3 {
-  color: #fff;
-  text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5); }
-
-.skills .learning-skills {
-  background: #1f1f1f;
-  padding: 2em; }
-
-.skills .learning-skills .learnSkills-wrapper img {
-  width: 12em;
-  max-width: 100%; }
-
-.skills .learning-skills .learnSkills-wrapper p {
-  color: #fff; }
+  .skills .skills-wrapper {
+    padding: 0.5em 10%; }
+  .skills .learning-skills {
+    background: #1f1f1f;
+    padding: 2em; }
+    .skills .learning-skills h3 {
+      color: #fff;
+      text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5); }
+    .skills .learning-skills .learnSkills-wrapper img {
+      width: 12em;
+      max-width: 100%; }
+    .skills .learning-skills .learnSkills-wrapper p {
+      color: #fff; }
 
 .work {
   width: 100%;
   position: relative; }
-
-.work .work-wrapper .logo-project img {
-  width: 250px;
-  max-width: 100%;
-  transition: all ease-in 0.3s;
-  -webkit-filter: brightness(70%);
-  filter: brightness(70%); }
-
-.work .work-wrapper .logo-project img:hover {
-  -webkit-filter: brightness(100%);
-  filter: brightness(100%);
-  transform: translateY(10px) scale(0.8); }
+  .work .work-wrapper .logo-project img {
+    width: 250px;
+    max-width: 100%;
+    transition: all ease-in 0.3s;
+    -webkit-filter: brightness(70%);
+    filter: brightness(70%); }
+    .work .work-wrapper .logo-project img :hover {
+      -webkit-filter: brightness(100%);
+      filter: brightness(100%);
+      transform: translateY(10px) scale(0.8); }
+  .work .work-wrapper .ui-project a > img {
+    max-height: 256px; }
+  .work .work-wrapper .ui-project .home-screenshot {
+    transition: all ease-in-out 0.3s; }
+  .work .work-wrapper .ui-project .home-screenshot:hover {
+    transform: scale(0.85); }
 
 .contact {
   width: 100%;
   position: relative;
   background: #1a1a1a;
   color: #fff; }
-
-.contact .uk-navbar-container.social-media-icons {
-  background: transparent;
-  padding: 1em 0; }
-
-.contact .social-media-icons .uk-navbar-nav > li > a {
-  width: 6em;
-  height: 6em;
-  margin-right: 1em;
-  color: #fff;
-  background: #222;
-  padding: 1em;
-  border-radius: 50%;
-  -webkit-filter: brightness(70%);
-  filter: brightness(70%);
-  text-align: center;
-  transition: all ease-in 0.2s; }
-
-.contact .social-media-icons .uk-navbar-nav > li > a i {
-  font-size: 3em;
-  vertical-align: middle; }
-
-.contact .social-media-icons .uk-navbar-nav > li > a:hover {
-  -webkit-filter: brightness(100%);
-  filter: brightness(100%);
-  transform: scale(1.2);
-  background: #333; }
+  .contact .uk-navbar-container.social-media-icons {
+    background: transparent;
+    padding: 1em 0; }
+    .contact .uk-navbar-container.social-media-icons .uk-navbar-nav li > a {
+      width: 6em;
+      height: 6em;
+      margin-right: 1em;
+      color: #fff;
+      background: #222;
+      padding: 1em;
+      border-radius: 50%;
+      -webkit-filter: brightness(70%);
+      filter: brightness(70%);
+      text-align: center;
+      transition: all ease-in 0.5s; }
+      @media (max-width: 700px) {
+        .contact .uk-navbar-container.social-media-icons .uk-navbar-nav li > a {
+          width: 3em;
+          height: 3em;
+          margin-right: 0.25em; } }
+      @media (max-width: 480px) {
+        .contact .uk-navbar-container.social-media-icons .uk-navbar-nav li > a {
+          width: 2em;
+          height: 2em;
+          margin-right: 0.25em; } }
+      .contact .uk-navbar-container.social-media-icons .uk-navbar-nav li > a i {
+        font-size: 3em;
+        vertical-align: middle; }
+        @media (max-width: 700px) {
+          .contact .uk-navbar-container.social-media-icons .uk-navbar-nav li > a i {
+            font-size: 1.5em;
+            vertical-align: middle; } }
+        @media (max-width: 480px) {
+          .contact .uk-navbar-container.social-media-icons .uk-navbar-nav li > a i {
+            font-size: 1em;
+            vertical-align: middle; } }
+    .contact .uk-navbar-container.social-media-icons .uk-navbar-nav li > a:hover {
+      -webkit-filter: brightness(100%);
+      filter: brightness(100%);
+      transform: scale(1.2);
+      background: #333; }
+  .contact .contact-me a {
+    color: #fff;
+    font-size: 1.2em; }
 
 .back-top {
   width: 2em;
@@ -10155,37 +10164,10 @@ h1, h2, h3, h4, h5, h6 {
   position: fixed;
   transition: all ease-in 0.3s;
   -webkit-transition: all ease-in 0.3s; }
-
-.back-top svg {
-  margin-top: 10px; }
-
-.back-top:hover {
-  background: #222;
-  color: #ccc; }
-
-@media screen and (max-width: 568px) {
-  .about .about-wrapper .about-features, .skills .skills-wrapper {
-    padding: 0.5em 5%; }
-
-  .contact .social-media-icons .uk-navbar-nav > li > a {
-    width: 3em;
-    height: 3em;
-    margin-right: 0.25em; }
-
-  .contact .social-media-icons .uk-navbar-nav > li > a i {
-    font-size: 1.5em;
-    vertical-align: middle; } }
-@media screen and (max-width: 480px) {
-  .home .me {
-    width: 50%; }
-
-  .contact .social-media-icons .uk-navbar-nav > li > a {
-    width: 2em;
-    height: 2em;
-    margin-right: 0.25em; }
-
-  .contact .social-media-icons .uk-navbar-nav > li > a i {
-    font-size: 1em;
-    vertical-align: middle; } }
+  .back-top svg {
+    margin-top: 10px; }
+  .back-top :hover {
+    background: #222;
+    color: #ccc; }
 
 /*# sourceMappingURL=main.css.map */
